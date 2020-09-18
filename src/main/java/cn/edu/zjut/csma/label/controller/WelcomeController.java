@@ -10,6 +10,6 @@ public class WelcomeController {
     //添加章节
     @GetMapping("")
     public String addChapter() {
-       return "welcome";
+       return "welcome1";
     }
 }
