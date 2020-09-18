@@ -1,0 +1,7 @@
+package cn.edu.zjut.csma.label;
+
+public class test {
+    public static void main(String[] args) {
+        System.out.println("ppp");
+    }
+}
