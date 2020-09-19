@@ -8,7 +8,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * </p>
  *
  * @author testjava
- * @since 2020-02-29
+ * @since 2020-09-19
  */
 public interface NewsInfoMapper extends BaseMapper<NewsInfo> {
 
