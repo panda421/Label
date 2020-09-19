@@ -17,8 +17,8 @@ public class NewsInfoController {
 
     //添加章节
     @GetMapping("getNewsInfo")
-    public String getNewsInfo(String newsId){
-        NewsInfo newsInfo=newsInfoService.getNewsInfo(newsId);
+    public String getNewsInfo(){
+        NewsInfo newsInfo=newsInfoService.getNewsInfo();
         return newsInfo.toString();
     }
 }
