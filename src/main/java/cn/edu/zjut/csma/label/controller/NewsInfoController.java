@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/labelservice/newsInfo")
-@CrossOrigin
 public class NewsInfoController {
     @Autowired
     private NewsInfoService newsInfoService;

@@ -13,31 +13,26 @@ import lombok.experimental.Accessors;
 import java.io.Serializable;
 import java.util.Date;
 
-/**
- * NewsInfo实体
- */
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-@ApiModel(value="NewsInfo对象", description="新闻")
-public class NewsInfo implements Serializable {
-    @ApiModelProperty(value = "ID")
+@ApiModel(value="TaskInfo对象", description="任务")
+public class TaskInfo implements Serializable {
+    @ApiModelProperty(value = "任务id")
     @TableId(value = "id", type = IdType.ID_WORKER_STR)
-    private String id;
-
-    @ApiModelProperty(value = "新闻Id")
-    private String newsId;
-
-    @ApiModelProperty(value = "新闻内容")
-    private String content;
-
-    @ApiModelProperty(value = "新闻类型")
-    private String newsType;
-
-    @ApiModelProperty(value = "任务Id")
     private String taskId;
 
-    @ApiModelProperty(value = "新闻标题")
-    private String newsTitle;
+    @ApiModelProperty(value = "任务名称")
+    private String taskName;
+
+    @ApiModelProperty(value = "创建时间")
+    @TableField(fill = FieldFill.INSERT)
+    private Date createTime;
+
+    @ApiModelProperty(value = "发布者id")
+    private String publishpersonId;
+
+    @ApiModelProperty(value = "标注人员人数")
+    private int markpersonCount;
 
 }
