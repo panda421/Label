@@ -44,6 +44,7 @@ public class uploadController {
             System.out.println("ppppp"+newFile1.getPath());
             newsInfoService.uploadNewsInfo(newFile1.getPath(),taskId);
             newFile1.delete();
+            System.out.println("ppp");
 
             File newFile2 = new File(ClassUtils.getDefaultClassLoader().getResource("").getPath()+"static/" + file2.getOriginalFilename());
             file2.transferTo(newFile2);
