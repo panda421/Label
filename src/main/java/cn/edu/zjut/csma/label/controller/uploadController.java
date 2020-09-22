@@ -75,6 +75,7 @@ public class uploadController {
             fileService.uploadWithBlock(name, md5,size,chunks,chunk,file);
         } else {
             fileService.upload(name, md5,file);
+            System.out.println("qqq");
         }
         return R.ok();
     }
